@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang='en us'>
+<head>
+  <meta charset='UTF-8'>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Crystal Collector</title>
+
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> 
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <link rel='stylesheet' type='text/css' href='assets/css/style.css'>
+  <script type='text/javascript' src='assets/javascript/game.js'>
+  </script>
+
+</head>
+
+<!-- Content -->
+<body>
+  <!-- Header Image -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://github.com/ppreyer" target="_blank"><span class="title">Crystal Collector</span></a>
+    </div>
+</nav>
+
+<div class='row' id='main-row'>
+  <div class='col-md-6' id="instructions">
+  <div class="panel panel-default">
+  <div class="panel-body">
+
+    <h3>Instructions</h3>
+    <p id='directions'>
+
+      You will be given a random number at the start of the game to get to kind of like blackjack.
+      <br><br>
+      There are four crystals to the side.  By clicking on a crystal you will add a specific amount of points to your total score.
+      <br><br>
+      You win by matching your total score to random number, you lose the game if your total score goes above the random number.
+      <br><br>
+      The value of each crystal is hidden from you until you click on it, then you have to think...and add.
+      <br><br>
+      Each time when the game starts, the game will change the values of each crystal, just to keep it fun hehe.
+    </p>
+    
+  </div>
+  </div>  
+  </div>
+
+  <div class='col-md-6'>
+    <div class='row' id='record-row'>
+      <div class='col-md-3'>
+      <div class="panel panel-default">
+      <div class="panel-body">
+          <p>Target Score:</p>
+          <p id='target-score'>0</p>
+        </div>
+      </div>
+      </div>
+      <div class='col-md-3'>
+      <div class="panel panel-default">
+      <div class="panel-body">
+          <p>
+            Wins: <span id='wins'>0</span>
+          </p>
+          <p>
+            Losses: <span id='losses'>0</span>
+          </p>
+      </div>
+      </div>
+      </div>
+      </div>
+    <div class='row'>
+      <div class='col-md-6' class="center-block">
+          <img class='stone' id='crystal' src='assets/images/crystal.png' />
+          <img class='stone' id='diamond' src='assets/images/diamond.png' />
+          <img class='stone' id='gemstone' src='assets/images/gemstone.png' />
+          <img class='stone' id='ruby' src='assets/images/ruby.png' />
+        </div>
+        </div>
+
+   <div class='row'>
+      <div class='col-md-6'>
+      <div class="panel panel-default" id="score-panel">
+      <div class="panel-body">
+        <div class='score-text'>
+         <p>Your total score is:</p>
+      </div>
+        <div class='score'>
+          <p id='user-score'>0</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+body {
+  
+  font-family: 'Comic Sans MS', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  background-color: #111111;
+}
+
+.title {
+  color: #ffffff;
+}
+
+#main-row {
+  margin: 0 10px;
+}
+#score-panel {
+  margin-top: 40px;
+}
+
+#record-row {
+  margin-bottom: 10px;
+}
+
+.stone {
+  width: 20%;
+}
+
+.stone:hover {
+  opacity: 0.5;
+}
+
+.stone:active {
+  transform: translateY(4px);
+}
+
+#wins,
+#losses {
+  color: black;
+}
+
+span:hover {
+  opacity: 0.5;
+}
+
+span:active {
+  transform: translateY(4px);
+}
